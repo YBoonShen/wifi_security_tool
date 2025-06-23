@@ -22,8 +22,8 @@ def scan_wifi(card):
     print("Scanning for networks...")
     card.scan()
     time.sleep(15)  # Wait for the scan to complete
-    wift_list = card.scan_results()
-    print(wift_list)
+    wifi_list = card.scan_results()
+    print(wifi_list)
 card = get_card()
 scan_wifi(card)
 # Note: The above code assumes that the pywifi library is installed and available in your Python environment.    
